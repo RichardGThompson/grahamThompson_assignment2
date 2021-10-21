@@ -24,6 +24,21 @@ body {
   margin: 0;
 }
 
+h1{
+  margin: 0.67em 0;
+}
+
+a{
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover{
+  outline: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -82,12 +97,138 @@ code {
   
 }
 
+.pinning-header .pinning-header-container .main-header{
+  z-index: 2;
+}
+
 .pinning-header .main-header .logo{
   color: #e50914;
   display: inline-block;
   cursor: pointer;
   margin-right: 5px;
   text-decoration: none;
+}
+
+
+
+.profiles-gate-container{
+  text-align: center;
+  z-index: 0;
+}
+
+.profiles-gate-container .centered-div{
+  /* z-index: 100; */
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-profiles{
+  max-width: 80%;
+  background: #141414;
+}
+
+.list-profiles .profile-gate-label{
+  width: 100%;
+  color: #fff;
+  font-size: 3.5vw;
+  font-weight: unset;
+}
+
+.list-profiles .choose-profile{
+  margin: 2em 0;
+  padding: 0;
+}
+
+.profiles-gate-container li.profile:not(:last-child){
+  margin: 0 2vw 0 0;
+}
+
+.profiles-gate-container li.profile{
+  width: 10vx;
+  max-width: 200px;
+  min-width: 84px;
+}
+
+.profiles-gate-container li{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.profiles-gate-container li a{
+  text-decoration: none;
+}
+
+.list-profiles .avatar-wrapper{
+  position: relative;
+}
+
+.profiles-gate-container .profile-icon{
+  height: 10vw;
+  width: 10vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px;
+  box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  border-radius: 4px;
+  border: none;
+}
+
+.profiles-gate-container .profile-icon::after{
+  content: '';
+  display: block;
+  border-radius: 4px;
+  border: 0.3em solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.profiles-gate-container .profile-name{
+  line-height: 1.2em;
+  min-height: 1.8em;
+  color: grey;
+  display: block;
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 0.6em 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.profiles-gate-container li a.focused .profile-icon, .profiles-gate-container li a:focus .profile-icon, .profiles-gate-container li a:hover .profile-icon{
+  border-color: #e5e5e5;
+}
+
+.profiles-gate-container li a.focused .profile-name, .profiles-gate-container li a:focus .profile-name, .profiles-gate-container li a:hover .profile-name{
+  color: #e5e5e5;
+}
+
+.profile-button{
+  display: block;
+  margin: 2em 0 1em 0;
+  font-size: 1.2vw;
+  border: 1px solid grey;
+  color: grey;
+  padding: 0.5em 1.5em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 

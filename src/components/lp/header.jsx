@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export const BasicHeader = () => {
+export const Header = () => {
     return (
         <div className="pinning-header">
             <div className="pinning-header-container">
@@ -9,5 +9,5 @@ export const BasicHeader = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
