@@ -12,17 +12,19 @@ import { Browse } from './components/browse';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <LandingPage/>
-          </Route>
+      <div className="netflix-sans-font-loaded">
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <LandingPage/>
+            </Route>
 
-          <Route exact path="/browse">
-            <Browse/>
-          </Route>
-        </Switch>
-      </Router>
+            <Route exact path="/browse">
+              <Browse/>
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }
