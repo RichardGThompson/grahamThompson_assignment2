@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-// TODO Sort out the hover.
+
 export const UserProfile = (props) => {
     return(
         <li className="profile">
@@ -9,8 +9,9 @@ export const UserProfile = (props) => {
                     <div className="avatar-wrapper">
                         <div className="profile-icon" style={{ backgroundImage: `url(/images/${props.profileImageURL})` }}></div>
                     </div>
+                    <span className="profile-name">{props.profileName}</span>
                 </a>
-                <span className="profile-name">{props.profileName}</span>
+                
             </div>
         </li>
     );

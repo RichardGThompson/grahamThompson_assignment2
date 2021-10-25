@@ -212,7 +212,7 @@ code {
 }
 
 .profiles-gate-container li a.focused .profile-icon, .profiles-gate-container li a:focus .profile-icon, .profiles-gate-container li a:hover .profile-icon{
-  border-color: #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
 .profiles-gate-container li a.focused .profile-name, .profiles-gate-container li a:focus .profile-name, .profiles-gate-container li a:hover .profile-name{
@@ -229,6 +229,11 @@ code {
   letter-spacing: 2px;
   cursor: pointer;
   background-color: transparent;
+}
+
+.profile-button:hover{
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 
