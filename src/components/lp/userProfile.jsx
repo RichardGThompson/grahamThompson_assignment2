@@ -1,16 +1,17 @@
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 
 export const UserProfile = (props) => {
     return(
         <li className="profile">
             <div>
-                <a href="#" className="profile-link" tabIndex="0">
+                <NavLink to="/browse">
                     <div className="avatar-wrapper">
                         <div className="profile-icon" style={{ backgroundImage: `url(/images/${props.profileImageURL})` }}></div>
                     </div>
                     <span className="profile-name">{props.profileName}</span>
-                </a>
+                </NavLink>
                 
             </div>
         </li>
