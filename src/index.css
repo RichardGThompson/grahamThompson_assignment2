@@ -8,7 +8,7 @@
   src: local('nf-icon'), url(./assets/fonts/nf-icon-v1-93.woff) format('woff');
 }
 
-body {
+body, html {
   background: #141414;
   color: #fff;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -82,12 +82,12 @@ code {
   background: transparent none repeat scroll 0% 0%;
 }
 
-.main-header{
+.pinning-header .main-header{
   background-color: transparent;
   height: 68px;
   z-index: 2;
   background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
-  font-size: 14px;
+  font-size: 1.2em;
   position: relative;
   display: flex;
   align-items: center;
@@ -109,7 +109,145 @@ code {
   text-decoration: none;
 }
 
+.pinning-header .tabbed-primary-navigation{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
 
+.pinning-header .tabbed-primary-navigation .navigation-tab{
+  list-style: none;
+  margin-left: 18px;
+}
+
+.pinning-header .tabbed-primary-navigation:not(.has-dropdown-menu) .navigation-tab{
+  display: block;
+}
+
+.pinning-header .tabbed-primary-navigation .navigation-tab a{
+  position: relative;
+  transition: color 0.4s;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pinning-header .tabbed-primary-navigation .navigation-tab a.current{
+  color: #fff;
+  font-weight: 700;
+  cursor: default;
+}
+
+.pinning-header .secondary-navigation{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  position: absolute;
+  right: 4%;
+  top: 0;
+  height: 100%;
+}
+
+.searchBox{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.searchTab{
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: 0 0;
+}
+
+.searchTab .icon-search{
+  font-weight: 700;
+}
+
+.icon-search::before{
+  content: '\e636';
+}
+
+.searchTab span{
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+
+.pinning-header .secondary-navigation:not(.menu-navigation) .icon-search{
+  font-size: 1.3em;
+  margin-right: 0;
+}
+
+.pinning-header .secondary-navigation .nav-element:not(:last-child){
+  margin-right: 15px;
+}
+
+.pinning-header .secondary-navigation .icon-search{
+  vertical-align: middle;
+}
+
+.icon-button-notification::before{
+  content: '\e663';
+}
+
+.pinning-header .secondary-navigation .notifications{
+  position: relative;
+  
+}
+
+.notifications{
+  white-space: normal;
+}
+
+.notifications .notifications-menu{
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: 0.2em;
+  padding: 2px 6px 3px;
+  position: relative;
+  color: #fff;
+}
+
+.pinning-header .account-menu-item{
+  display: block;
+  position: relative;
+  font-size: 12px;
+  z-index: 0;
+}
+
+.pinning-header .account-menu-item .account-dropdown-button{
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.pinning-header .secondary-navigation .nav-element a{
+  display: block;
+}
+
+.pinning-header .account-dropdown-button a{
+  z-index: -1;
+  position: relative;
+}
+
+.pinning-header .account-dropdown-button .profile-link{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pinning-header .account-dropdown-button .profile-icon{
+  vertical-align: middle;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+}
 
 .profiles-gate-container{
   text-align: center;

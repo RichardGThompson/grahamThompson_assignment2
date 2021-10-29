@@ -7,7 +7,7 @@ import { ProfilesContainer } from "./profiles";
 import { UserProfile } from "./userProfile";
 
 export const LandingPage = () => {
-    
+
     const userContext = useContext(UsersContext);
     
     return(
