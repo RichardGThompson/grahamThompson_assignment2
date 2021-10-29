@@ -9,9 +9,6 @@ ReactDOM.render(
   <UsersContextProvider>
     <App />
   </UsersContextProvider>,
-//   <React.StrictMode>
-//   <App />
-// </React.StrictMode>
   document.getElementById('root')
 );
 

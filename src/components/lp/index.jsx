@@ -8,17 +8,6 @@ import { UserProfile } from "./userProfile";
 
 export const LandingPage = () => {
     
-    // const placeHolderProfiles = [
-    //     {
-    //         name: "Graham",
-    //         imageURL: "avatar001.png"
-    //     },
-    //     {
-    //         name: "Morgan",
-    //         imageURL: "avatar002.png"
-    //     }
-    // ];
-
     const userContext = useContext(UsersContext);
     
     return(
