@@ -1,0 +1,387 @@
+.lolomo{
+    padding: 0 0 50px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.lolomo.is-fullbleed{
+    margin-top: -70px;
+}
+
+.volatile-billboard-animations-container{
+    display: block;
+    /* z-index: 1; */
+    position: relative;
+}
+
+.billboard-row{
+    user-select: none;
+    touch-action: pan-y;
+    margin-bottom: 20px;
+    background-color: #000;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+.volatile-billboard-animations-container .billboard-row{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.billboard-row .billboard{
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 56.25vw;
+    z-index: 0;
+}
+
+.billboard-row .billboard .billboard-motion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.billboard-row .billboard .bottom-layer{
+    z-index: 2;
+}
+
+.billboard-row .billboard .full-screen{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.billboard-row .billboard .hero-image-wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.billboard-row .billboard .hero-image-wrapper .static-image{
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .4s cubic-bezier(.665,.235,.265,.8) 0s;
+}
+
+.billboard-row .billboard .hero-image-wrapper .image-layer{
+    z-index: 5;
+}
+
+.billboard-row .billboard .hero-image-wrapper .trailer-vignette{
+    background: linear-gradient(77deg,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 85%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 26.09%;
+    bottom: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.billboard-row .billboard .hero-image-wrapper .hero-vignette{
+    background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+    background-size: 100% 100%;
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    width: 100%;
+    height: 14.7vw;
+    top: auto;
+    bottom: -1px;
+    opacity: 1;
+}
+
+.billboard-row .billboard .hero-image-wrapper .vignette-layer{
+    z-index: 8;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.billboard-row .billboard .embedded-components{
+    position: absolute;
+    right: 0;
+    bottom: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.billboard-row .billboard .button-layer {
+    z-index: 10;
+}
+
+.billboard-row .billboard .billboard-motion .action-buttons{
+    width: 2.4vw;
+    height: 2.4vw;
+    position: relative;
+    margin: 0 1.1vw 0 0;
+}
+
+.ltr-1knzl35{
+    align-items: center;
+    appearance: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    padding: 0.8rem;
+    position: relative;
+    user-select: none;
+    will-change: background-color, color;
+    word-break: break-word;
+    white-space: nowrap;
+    border-radius: 50%;
+}
+
+.ltr-1knzl35.round.color-supplementary{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+}
+
+.ltr-1knzl35.hasIcon{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.ltr-1knzl35.round.color-supplementary:not(:disabled):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ltr-1ksxkn9{
+    line-height: 0;
+}
+
+.ltr-18dhnor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ltr-18dhnor svg{
+    height: 100%;
+    width: 100%;
+}
+
+.ltr-18dhnor.small{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.billboard-row .billboard .maturity-rating{
+    border: solid 3px #dcdcdc;
+    border-style: none none none solid;
+    background-color: rgba(51,51,51,0.6);
+    font-size: 1.1vw;
+    padding: 0.5vw 3.5vw 0.5vw 0.8vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+.fill-container{
+    height: 100%;
+    width: 100%;
+}
+
+.billboard-row .billboard .fill-container{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+.billboard-row .billboard .info{
+    position: absolute;
+    top: 0;
+    bottom: 35%;
+    left: 4%;
+    width: 36%;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.billboard-row .billboard .info .logo-and-text{
+    width: 100%;
+    transition: transform 1.5s cubic-bezier(.165,.84,.44,1),-webkit-transform 1.5s cubic-bezier(.165,.84,.44,1),-moz-transform 1.5s cubic-bezier(.165,.84,.44,1),-o-transform 1.5s cubic-bezier(.165,.84,.44,1);
+}
+
+.titleWrapper{
+    transform-origin: left bottom 0px; 
+    transform: scale(1) translate3d(0px, 0px, 0px); 
+    transition-duration: 1300ms; 
+    transition-delay: 0ms;
+}
+
+.billboard-row .billboard .info .billboard-title{
+    min-height: 13.2vw;
+    position: relative;
+    margin-bottom: 1.2vw;
+}
+
+.billboard-row .billboard .info .billboard-title .title-logo{
+    width: 100%;
+    transform-origin: bottom left;
+}
+
+.info-wrapper{
+    transform: translate3d(0px, 0px, 0px); 
+    transition-duration: 1300ms; 
+    transition-delay: 0ms; 
+    opacity: 1;
+}
+
+.info-wrapper-fade{
+    opacity: 1; 
+    transition-duration: 600ms; 
+    transition-delay: 200ms;
+}
+
+.billboard-row .billboard .info .synopsis{
+    color: #fff;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    font-size: 1.4vw;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+    margin-top: 0.1vw;
+    text-align: left;
+}
+
+.billboard-row .billboard .info .billboard-links{
+    margin-top: 1.5vw;
+    white-space: nowrap;
+    display: flex;
+    line-height: 88%;
+}
+
+.billboard-row .billboard .info .billboard-links > a, .billboard-row .billboard .info .billboard-links > button{
+    flex-shrink: 0;
+}
+
+.billboard-row .billboard .info .billboard-links > a{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.ltr-v8pdkb.hasLabel.hasIcon{
+    padding-left: 2rem;
+    padding-right: 2.4rem;
+}
+
+.billboard-links .playLink .button{
+    margin-left: 0;
+}
+
+.ltr-v8pdkb.color-primary{
+    background-color: white;
+    color: black;
+}
+
+.billboard-links button{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.ltr-v8pdkb {
+    -moz-box-align: center;
+    align-items: center;
+    appearance: none;
+    border: 0px none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    opacity: 1;
+    padding: 0.8rem;
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    position: relative;
+    user-select: none;
+    will-change: background-color, color;
+    word-break: break-word;
+    white-space: nowrap;
+    line-height: 8px;
+}
+
+.ltr-1ksxkn9{
+    line-height: 0;
+}
+
+.ltr-18dhnor.medium{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.ltr-18dhnor{
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+.ltr-18dhnor svg{
+    height: 100%;
+    width: 100%;
+}
+
+.ltr-1i33xgl{
+    width: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.ltr-zd4xih {
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+
+.ltr-v8pdkb.color-secondary {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+
+

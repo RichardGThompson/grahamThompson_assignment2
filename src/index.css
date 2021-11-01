@@ -44,6 +44,19 @@ code {
     monospace;
 }
 
+svg:not(:root){
+  overflow: hidden;
+}
+
+.visually-hidden{
+  clip: rect(1px,1px,1px,1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
 .netflix-sans-font-loaded{
   font-size: 0.85vw;
   background: #141414;
@@ -87,7 +100,7 @@ code {
   height: 68px;
   z-index: 2;
   background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
-  font-size: 1.2em;
+  font-size: 1.2rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -384,6 +397,12 @@ code {
   border: 1px solid #fff;
 }
 
+.action-buttons{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  font-size: 1.35rem;
+}
 
 @media screen and (min-width: 950px){
   .pinning-header .main-header .logo{
