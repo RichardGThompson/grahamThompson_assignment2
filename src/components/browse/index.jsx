@@ -17,6 +17,7 @@ export const Browse = (props) => {
                 <div className="main-header has-billboard menu-navigation">
                     <NavLink className="logo icon-logoUpdate" to="/browse"></NavLink>
                     <ul className="tabbed-primary-navigation">
+                        {/* Create navigation elements for the header. */}
                         {navElements.map((elem) => <NavigationElement bodyText={elem.bodyText} linkPath={elem.linkPath} isCurrent={elem.isCurrent}/>)}
                     </ul>
 
@@ -39,15 +40,17 @@ export const Browse = (props) => {
 
                         <div className="nav-element">
                             <div className="account-menu-item">
-                                <div className="account-dropdown-menu">
+                                <div className="account-dropdown-button">
                                     <a href="">
                                         <span className="profile-link" role="presentation">
-                                            <img src={`url(/images/avatar001.png)`} alt="" className="profile-icon" />
+                                            <img src={`/images/avatar001.png`} alt="" className="profile-icon" />
                                         </span>
                                     </a>
+                                    <span className="caret" role="presentation"></span>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

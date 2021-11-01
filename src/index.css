@@ -249,6 +249,16 @@ code {
   border-radius: 4px;
 }
 
+.pinning-header .account-dropdown-button .caret{
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  transition: transform 367ms cubic-bezier(.21,0,.07,1),-webkit-transform 367ms cubic-bezier(.21,0,.07,1),-moz-transform 367ms cubic-bezier(.21,0,.07,1),-o-transform 367ms cubic-bezier(.21,0,.07,1);
+}
+
 .profiles-gate-container{
   text-align: center;
   z-index: 0;
