@@ -2,6 +2,7 @@ import './styles.css';
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import { NavigationElement } from "./navigation-item";
+import { UserSelection } from './user-selection';
 
 
 export const Browse = (props) => {
@@ -46,16 +47,7 @@ export const Browse = (props) => {
                             </div>
 
                             <div className="nav-element">
-                                <div className="account-menu-item">
-                                    <div className="account-dropdown-button">
-                                        <a href="">
-                                            <span className="profile-link" role="presentation">
-                                                <img src={`/images/avatar001.png`} alt="" className="profile-icon" />
-                                            </span>
-                                        </a>
-                                        <span className="caret" role="presentation"></span>
-                                    </div>
-                                </div>
+                                <UserSelection/>
                             </div>
 
                         </div>
