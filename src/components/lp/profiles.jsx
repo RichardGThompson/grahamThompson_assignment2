@@ -14,7 +14,7 @@ export const ProfilesContainer = (props) => {
                 <div className="list-profiles">
                     <h1 className="profile-gate-label">Who's watching?</h1>
                     <ul className="choose-profile">
-                        {props.profiles.map((profile) => <UserProfile profileName={profile.name} profileImageURL={profile.imageURL}/>)}
+                        {props.profiles.map((profile) => <UserProfile key={profile.uuid} profileUUID={profile.uuid} profileName={profile.name} profileImageURL={profile.imageURL}/>)}
                     </ul>
                 </div>
                 <span>

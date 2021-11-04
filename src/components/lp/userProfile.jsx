@@ -19,11 +19,13 @@ export const UserProfile = (props) => {
 }
 
 UserProfile.propTypes = {
+    profileUUID: PropTypes.string.isRequired,
     profileName: PropTypes.string.isRequired,
     profileImageURL: PropTypes.string.isRequired
 }
 
 UserProfile.defaultProps = {
+    profileUUID: "",
     profileName: "",
-    profileImageURL: "placeholder-avatar.jpg"
+    profileImageURL: ""
 }

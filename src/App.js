@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
 } from "react-router-dom";
 import './App.css';
 import { LandingPage } from './components/lp';
 import { Browse } from './components/browse';
 import { useContext } from 'react/cjs/react.development';
 import { UsersContext } from './context/users-context';
+import { v4 as uuid } from 'uuid';
 
 
 function App() {
-  
   const userContext = useContext(UsersContext);
 
   // For the purposes of this assignment we are using placeholder users. Ideally this would be pulled from a DB, however, that is outside of the scope of this assignment.
-  userContext.addUser({name:"Graham", imageURL:"avatar001.png"});
-  userContext.addUser({name:"Morgan", imageURL:"avatar002.png"});
+  userContext.addUser({uuid: uuid(), name:"Graham", imageURL:"avatar001.png", activeProfile:true});
+  userContext.addUser({uuid: uuid(), name:"Morgan", imageURL:"avatar002.png", activeProfile:false});
+
+  console.log(userContext.users);
   
   return (
     <div className="App">

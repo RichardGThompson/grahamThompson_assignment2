@@ -1,5 +1,4 @@
 import './styles.css';
-import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import { NavigationElement } from "./navigation-item";
 
@@ -48,7 +47,7 @@ export const Browse = (props) => {
                             <div className="nav-element">
                                 <div className="account-menu-item">
                                     <div className="account-dropdown-button">
-                                        <a href="">
+                                        <a href="#">
                                             <span className="profile-link" role="presentation">
                                                 <img src={`/images/avatar001.png`} alt="" className="profile-icon" />
                                             </span>
@@ -115,7 +114,7 @@ export const Browse = (props) => {
                                             </div>
 
                                             <div className="billboard-links button-layer forward-leaning">
-                                                <a data-uia="play-button" role="link" aria-label="Play" class=" playLink isToolkit" href="">
+                                                <a data-uia="play-button" role="link" aria-label="Play" class=" playLink isToolkit" href="#">
                                                     <button class="color-primary hasLabel hasIcon ltr-v8pdkb" tabindex="-1" type="button">
                                                         <div class="ltr-1ksxkn9">
                                                             <div class="medium ltr-18dhnor" role="presentation">
