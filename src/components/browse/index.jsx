@@ -1,6 +1,9 @@
 import './styles.css';
 import { NavLink } from "react-router-dom";
 import { NavigationElement } from "./navigation-item";
+import { SliderItem } from './slider-item';
+import { Row } from './row';
+import { MemberFooter } from '../common-page-elems/member-footer';
 
 
 export const Browse = (props) => {
@@ -10,14 +13,85 @@ export const Browse = (props) => {
         {bodyText: "Movies", linkPath: "", isCurrent:false},
         {bodyText: "New & Popular", linkPath: "", isCurrent:false},
         {bodyText: "My List", linkPath: "", isCurrent:false}
+    ];
+
+    const rowOneItems = [
+        
+    ];
+
+    const rows = [
+        {
+            rowTitle: "Tv Shows",
+            rowItems: [
+                {
+                    itemName: "Big Mouth",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaNeEqzOlqssJOd2UcPq9uDNaBHppptGB8KE4KkrNQ9vCJoDsMxn-f6ro7H3TR6RAw3_48aSWU_CXqNUhRIbwK_6RY6YccBJDTpHEMjgPZG995iyI6l6zThZgHqkV_hu8WfdECo03HjJOQME4yEgPiFLsWplCaXnp9fCzjL6QJHSVPeG6tVoUfB6cCf3WFqnDMiMPXCzGOozStOnoFwAbiIz.jpg?r=aac"
+                },
+                {
+                    itemName: "Tiger King",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS2pSHUiEi7LHxEmwa0KK_j35WtY-JAPM6M937zBEFBBYn-cSe_fk8CpyjOcYyJmU9SzYWKWGI7w2lJYsGvhg9QKu9VmNPov2zpR3a8ONq-0CBNuyxq-B0YNxFys.jpg?r=d71"
+                },
+                {
+                    itemName: "Explained",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWt-SRwVHSA5FvQTYwfVh5sKDC6702oAffKUZJ-HZdbhlmXFHBLR5R9b3-NJeGEPEz57RVvy7gQcOJlpo-lkCXS11mCIe85F24vISlsa7Iksy0XhnnaniwTjL-PO4mImqqZo8dOx8i5IamhZXR4P4phjPJS5Ug.jpg?r=f6e"
+                },
+                {
+                    itemName: "Black Mirror",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQMeRlrLJszZK1PPcfBNRSlWjLN6oOCiyEcH4Gu3dHI9rDeOe1xCjm9eKBIRzB8xqb2TB1ZZtvO-4OENdyoElsqFMEfyUenyx0nx20hrhkpwiziodReUWh4bPfyq.jpg?r=743"
+                },
+                {
+                    itemName: "Parks and Rec",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdVbH4gypiIXMminj-ztFvDuCwC5Ct0uKl7t0M_55GONHKhgTvxesn7LqpwDhJR6TC82HMAzDCeKpqx3FJAR50CkeEM.jpg?r=72a"
+                },
+                {
+                    itemName: "Community",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYFU54kh9JTIFcgz63ncUvud5thoiu2ytOwzSLBEc7lKvsW0Ix_YKb9jTkK3dPTnYfvLzJKi6tGFlgjmiJ4j-h-1zr8.jpg?r=190"
+                },
+                {
+                    itemName: "Inside Job",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTa8zKZrDzt9Ib_dhDb26tjjxhH-Jopmyv-3wfbycNl-E7YUZ8-SFCayNNaXn81SacR-iD9xDfgS34rnr-Gw0YAJcON2KGgwq0eAvfUau5no8stR1zu64z23j508.jpg?r=25b"
+                }
+            ]
+        },
+        {
+            rowTitle: "Horror Movies",
+            rowItems: [
+                {
+                    itemName: "The Thing",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdsPp2IE5Vy_-rHSjvfcinh5CvQ-UPOteK086hwSSHep8v7O3rmlYG0qmnQllcPWhM_HK83RepUfJZcp13w8vBKOJMM.jpg?r=813"
+                },
+                {
+                    itemName: "Zombieland: Double Tap",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW_jGj7H-U0rUptdq-J0al_rPhWWOkjsLKD3Fkqq0piW11qwgRJUz8jBO5HP827KbpChNVeqCd49nYd51ACykdPW7x8.jpg?r=f9d"
+                },
+                {
+                    itemName: "Beetlejuice",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWytZV-d02t-XhPVPLWHMb4R6R9hFTEDTtnM4K9727H4PpPlFBRokk_zmJH4Ril8aDlPrZ3CVDx617lqe0TUUiVIfS0.jpg?r=425"
+                },
+                {
+                    itemName: "Doctor Sleep",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbV5ACP2y3aGmIT-bVWtkAb4AikqlejO58l3EUDpjlEzpCCHca28tTtubfFfkhB6gw4Xl-n1FXzbY4NQgEmPLVESXGQ.jpg?r=202"
+                },
+                {
+                    itemName: "Halloween",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU6h7sXTKzUsDoQOE9pOZn6NbQXaL67YXEPeU2AfrAiF5fBdssRfSZClr7i-g7XvhWs7BxUt1cwoVpf1K7TBMNPg6p0.jpg?r=fdb"
+                },
+                {
+                    itemName: "Cabin in the Woods",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUykss_be8Pg6UFHPCzBQN0gozE85myg2THytW9Shp8mZ8QaFTZdq0IAO1PcV-m3m7Jvwq6KvDgAm2rQg3y-aV4b3tk.jpg?r=5c4"
+                },
+                {
+                    itemName: "Scary Movie",
+                    imageUrl: "https://oc2-0-953-1001.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVqdgi2SoBc4Jz0G32MJxoKNDZmxLYK2WffmxC5yzkYi8wV2GMsNa4kldM9w6hq1XS-QplqLVeDoEnPIy776EUOq3Nw.jpg?r=3ba"
+                }
+            ]
+        }
     ]
     
     return(
         
         // This div is just here to make react happy
         <div>
-
-        
             <div className="pinning-header">
                 <div className="pinning-header-container">
                     <div className="main-header has-billboard menu-navigation">
@@ -148,9 +222,15 @@ export const Browse = (props) => {
                             </div>
                         </div>
                     </span>
+
+                    {rows.map( (row) => <Row rowTitle={row.rowTitle} rowItems={row.rowItems}/>)}
+
                 </div>
+
             </div>
 
+            <MemberFooter/>
         </div>
+
     )
 }

@@ -1,0 +1,98 @@
+.member-footer{
+    max-width: 980px;
+    margin: 20px auto 0;
+    padding: 0 4%;
+    color: grey;
+}
+
+.member-footer .social-links{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.member-footer .social-links .social-link{
+    margin-right: 15px;
+}
+
+.member-footer .social-links .social-link .svg-icon{
+    fill: grey;
+    height: 25px;
+    width: 36px;
+}
+
+.svg-icon{
+    transform: scale(1);
+    border: solid 1px transparent;
+    margin: 0 -1px;
+}
+
+.member-footer .member-footer-links{
+    font-size: 13px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 0 0 14px 0;
+    padding: 0;
+}
+
+.member-footer .member-footer-link-wrapper{
+    list-style-type: none;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    flex-basis: 50%;
+    margin-bottom: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.member-footer .member-footer-link{
+    color: grey;
+    text-decoration: none;
+}
+
+.member-footer .service-code{
+    margin-bottom: 20px;
+    font-size: 13px;
+    padding: 0.5em;
+    display: flex;
+}
+
+.service-code{
+    background: 0 0;
+    color: grey;
+    border: solid 1px grey;
+}
+
+.member-footer .member-footer-copyright{
+    font-size: 11px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+    .member-footer .member-footer-link-wrapper{
+        flex-basis: 25%;
+    }
+}
