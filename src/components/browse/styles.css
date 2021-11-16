@@ -593,8 +593,17 @@
 
 /****** MOBILE ******/
 @media screen and (max-width:499px){
+    .desktop-nav-elem{
+        display: none !important;
+    }
     .rowContainer .rowContent .slider .row-with-x-columns .slider-item {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .lolomoRow.lolomoRow_title_card .rowTitle{
+        font-size: 12px;
     }
 }
 @media screen and (min-width: 500px) and (max-width:799px){

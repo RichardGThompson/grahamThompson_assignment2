@@ -428,6 +428,12 @@ svg:not(:root){
   font-size: 1.35rem;
 }
 
+@media screen and (min-width: 0px) and (max-width: 480px){
+  body, html {
+    font-size: 1.5vw;
+  }
+}
+
 @media screen and (min-width: 950px){
   .pinning-header .main-header .logo{
     font-size: 25px;
