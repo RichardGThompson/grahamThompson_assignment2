@@ -272,6 +272,30 @@ svg:not(:root){
   transition: transform 367ms cubic-bezier(.21,0,.07,1),-webkit-transform 367ms cubic-bezier(.21,0,.07,1),-moz-transform 367ms cubic-bezier(.21,0,.07,1),-o-transform 367ms cubic-bezier(.21,0,.07,1);
 }
 
+/**** TABLET DROPDOWN ******/
+.pinning-header .tabbed-primary-navigation .navigation-menu .menu-trigger{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  height: 100%;
+}
+
+.pinning-header .tabbed-primary-navigation .navigation-menu .menu-trigger::after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  margin-left: 5px;
+}
+
+.desktop-nav-elem{
+  display: block;
+}
+
+
+/***** PROFILES CONTAINER *****/
 .profiles-gate-container{
   text-align: center;
   z-index: 0;

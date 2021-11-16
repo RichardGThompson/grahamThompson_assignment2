@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const NavigationElement = (props) => {    
     return(
         <li className="navigation-tab">
-            <NavLink className={props.isCurrent ? "current active" : ""} to={props.linkPath}>{props.bodyText}</NavLink>
+            <NavLink className={props.isCurrent ? "current active desktop-nav-elem" : "desktop-nav-elem"} to={props.linkPath}>{props.bodyText}</NavLink>
         </li>
     );
 }
